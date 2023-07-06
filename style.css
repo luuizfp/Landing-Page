@@ -1,0 +1,107 @@
+body {
+    background-color: rgb(34, 34,34);
+    color: white;
+    font-family: poppinsregular;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/*dislplay flex diz para o site que o cabeçalho vai ser uma flex box, flex direction row quer dizer que vai ser em linha, row=linha, o padrão é colum*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*line height é a altura da separação da coluna neste caso, espaço entre os dois h1*/
+
+#title {
+    flex-direction: column;
+    line-height: 10px;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: rgb(132, 14, 201);
+    transition: 0.3s all;
+}
+
+#botao {
+    border: 2px solid rgb(132, 14, 201);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#botao:hover{
+    background-color: rgb(132, 14, 201);
+    color: white;
+}
+
+h1 {
+    font-weight: 200;
+}
+
+h2 {
+    font-size: 56px;
+    line-height: 10px;
+    font-family: poppinsmedium;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+span {
+    color: rgb(132, 14, 201);
+}
+
+p {
+    line-height: 20px;
+    max-width: 500px;
+    font-family: poppinslight;
+}
+
+img {
+    width: 580px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+/*para pegar uma tag específica usar os seguintes termos*/
+form [type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color: rgb(132, 14, 201);
+    color: white;
+    font-weight: bold;
+}
+/*cursor de clique*/
+form [type="submit"]:hover{
+    cursor: pointer;
+}
+
+input {
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
